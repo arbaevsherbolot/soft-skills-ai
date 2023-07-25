@@ -1,5 +1,5 @@
 .navbar {
-  padding: 1rem 4%;
+  padding: 0.6rem 9%;
 
   width: 100%;
 
@@ -12,8 +12,8 @@
   border-bottom: 1px solid #dfe2e6;
 
   .logo {
-    width: 120px;
-    height: 29px;
+    width: 140px;
+    height: 36px;
 
     img {
       width: 100%;
@@ -53,7 +53,15 @@
         }
 
         &.active_link {
-          background-color: #fafafa;
+          background-color: #f8f8f8;
+
+          &:hover {
+            background-color: #f1f4f7;
+          }
+
+          &:active {
+            background-color: #ebeff2;
+          }
         }
       }
     }
@@ -67,6 +75,7 @@
 @media (max-width: 1015px) {
   .navbar {
     height: 70px;
+    padding: 0.6rem 3%;
 
     .right {
       display: none;
@@ -77,11 +86,12 @@
 
       .menu_icon {
         position: relative;
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
         cursor: default;
 
         border-radius: 50%;
+        background-color: #eaecef;
 
         transition: 0.2s;
 
@@ -108,7 +118,7 @@
           right: 0;
           left: 0;
           bottom: 0;
-          width: 26px;
+          width: 20px;
           height: 12px;
         }
 
@@ -148,7 +158,7 @@
         &.active:hover span:last-of-type,
         &:hover .button.active + div span:first-of-type,
         &:hover .button.active + div span:last-of-type {
-          width: 26px;
+          width: 20px;
         }
       }
 

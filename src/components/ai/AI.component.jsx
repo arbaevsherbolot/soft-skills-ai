@@ -93,6 +93,13 @@ const AI = () => {
   return (
     <>
       <div className={styles.page_wrapper}>
+        <div className={styles.page_text}>
+          <h3 className={styles.page_title}>Soft-Skills AI</h3>
+          <p className={styles.desc}>
+            © WEDEVX 2023 / Sher, Akbar, Aliya, Yakshika
+          </p>
+        </div>
+
         <form onSubmit={sendData} className={styles.form}>
           <div className={styles.controller_wrapper}>
             <div className={styles.controller}>
@@ -102,7 +109,7 @@ const AI = () => {
                     key={i}
                     className={activeTopic(t.order)}
                     onClick={() => handleChangeToggleTopic(t.order, t.title)}>
-                    {t.title}
+                    <span>{t.title}</span>
                   </div>
                 ))}
 

@@ -39,7 +39,7 @@ const Header = ({ open }) => {
                     ? `${styles.link} ${styles.active_link}`
                     : styles.link
                 }>
-                {link.title}
+                <span>{link.title}</span>
               </NavLink>
             ))}
           </div>
