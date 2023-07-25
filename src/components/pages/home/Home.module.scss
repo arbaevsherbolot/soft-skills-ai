@@ -1,6 +1,54 @@
 .page_wrapper {
-  min-height: 200vh;
+  margin-top: 5rem;
+
+  width: 100%;
+  max-width: 1200px;
 
   display: flex;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+
+  .title {
+    background: linear-gradient(45deg, #9b62dd, #5a67e5);
+    -webkit-background-clip: text;
+
+    text-align: center;
+    color: transparent;
+    font-family: "PolySans", "Inter", system-ui, sans-serif;
+    font-weight: 800;
+    font-size: 4rem;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 0.6rem;
+
+    .button {
+      padding: 0.8rem 1.8rem;
+
+      cursor: pointer;
+      text-decoration: none;
+
+      border: 1px solid #00000011;
+      border-radius: 3rem;
+
+      span {
+        color: #1e1e1e;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+
+      transition: 0.4s;
+
+      &.active {
+        background: #5f62e2;
+
+        span {
+          color: #fff;
+        }
+      }
+    }
+  }
 }

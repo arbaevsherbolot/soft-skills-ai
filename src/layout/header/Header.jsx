@@ -14,7 +14,7 @@ const Header = ({ open }) => {
 
   const navLinks = [
     {
-      path: "/",
+      path: "/soft-skills-ai",
       title: "Soft-Skill AI",
     },
   ];

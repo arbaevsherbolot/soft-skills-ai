@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import icon from "../../assets/svg/send.svg";
+import icon from "../../../assets/svg/send.svg";
 import styles from "./AI.module.scss";
 
 const AI = () => {
