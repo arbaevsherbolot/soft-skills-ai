@@ -76,7 +76,7 @@ const AI = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8888/api/soft-skills-ai",
+        "https://soft-skils-ai-mvp-server.vercel.app/api/soft-skills-ai",
         {
           message: message,
           topic: topic,
